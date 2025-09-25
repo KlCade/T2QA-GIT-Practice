@@ -1,0 +1,65 @@
+{"level":30,"time":"2025-09-25T16:55:22.386Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Listening on 127.0.0.1:54548"}
+(node:4796) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-09-25T16:55:22.726Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-09-25T16:55:23.324Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Adding browser to stack: chromium, version: 140.0.7339.186"}
+{"level":30,"time":"2025-09-25T16:55:23.324Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-09-25T16:55:23.325Z","pid":4796,"hostname":"T2-LAP-9751","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-09-25T16:55:23.332Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-09-25T16:55:23.332Z","pid":4796,"hostname":"T2-LAP-9751","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@f5068e6be453bd4f4c7eb7fd2468bff1\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=dc912f33-d574-4ebe-8f73-a9ef670b180b\"}"}
+{"level":30,"time":"2025-09-25T16:55:23.358Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Setting default timeout for context context=a161a560-0628-4cf2-802b-c317ebc3f70c to 10000"}
+{"level":30,"time":"2025-09-25T16:55:23.358Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Changed active context: context=a161a560-0628-4cf2-802b-c317ebc3f70c"}
+{"level":30,"time":"2025-09-25T16:55:23.824Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Video path: undefined"}
+{"level":30,"time":"2025-09-25T16:55:23.824Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Changed active page"}
+{"level":30,"time":"2025-09-25T16:55:29.332Z","pid":4796,"hostname":"T2-LAP-9751","msg":"End of node method newPage"}
+{"level":30,"time":"2025-09-25T16:55:29.335Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-25T16:55:29.336Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Strict mode is enabled, find Locator with id=ctl00_T2Main_txtLogin in page."}
+{"level":30,"time":"2025-09-25T16:55:29.876Z","pid":4796,"hostname":"T2-LAP-9751","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-25T16:55:29.881Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-25T16:55:29.881Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Strict mode is enabled, find Locator with id=ctl00_T2Main_txtPassword in page."}
+{"level":30,"time":"2025-09-25T16:55:30.397Z","pid":4796,"hostname":"T2-LAP-9751","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-25T16:55:30.402Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-25T16:55:30.402Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Strict mode is enabled, find Locator with id=ctl00_T2Main_cmdLogin in page."}
+{"level":30,"time":"2025-09-25T16:55:31.692Z","pid":4796,"hostname":"T2-LAP-9751","msg":"End of node method click"}
+{"level":30,"time":"2025-09-25T16:55:31.696Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2025-09-25T16:55:31.696Z","pid":4796,"hostname":"T2-LAP-9751","msg":"timeout: 10000 state: networkidle"}
+{"level":30,"time":"2025-09-25T16:55:31.843Z","pid":4796,"hostname":"T2-LAP-9751","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2025-09-25T16:55:31.847Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Start of node method getText"}
+{"level":30,"time":"2025-09-25T16:55:31.847Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Strict mode is enabled, find Locator with body in page."}
+{"level":30,"time":"2025-09-25T16:55:31.880Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Retrieved text for element body containing TEST Mode DB: oraqa-dukeqa1.t2qa.com/dukeqa1 WS: https://dukedev201.t2qa.com/DUKEQA1/PowerParkWS/ Server: FLX-Q-FLXP201 1 session Customer: 0 Basket: 2339197\nWelcome, Kasey1\n2490\nLast Login at 9/23/2025 1:13:02 PM PST from 172.25.185.76\nLogout\nT2 Systems, Inc. FlexPort Administration 17.13.25239.8\n Configuration \n Analyze Flex \n Guest Permits \n Status \n Users \n Advanced \n Home\nAdmin Menu > Impersonate Flex Entity\nImpersonate Flex Entity\n\nEnter a valid Flex Entity UID to log in to the FlexPort application as that user.\n\nNote that regardless of configuration options, you will be directed to the \"My Account\" page.\n\nEntity UID  * \n\n\n© 2025 T2 Systems, Inc. All Rights Reserved.\n\nDisable the T2 Systems Support Account"}
+{"level":30,"time":"2025-09-25T16:55:31.880Z","pid":4796,"hostname":"T2-LAP-9751","msg":"End of node method getText"}
+{"level":30,"time":"2025-09-25T16:55:31.884Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-09-25T16:55:31.895Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Removed page=9ce3b1fc-e08a-4263-8ecc-d1847513bb42 from context=a161a560-0628-4cf2-802b-c317ebc3f70c page stack"}
+{"level":30,"time":"2025-09-25T16:55:32.138Z","pid":4796,"hostname":"T2-LAP-9751","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12419:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13368:59)
+    at PlaywrightServer.setTimeout (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13617:57)
+    at Object.onReceiveHalfClose (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-09-25T16:55:32.144Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-25T16:55:32.144Z","pid":4796,"hostname":"T2-LAP-9751","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12419:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13368:59)
+    at PlaywrightServer.setTimeout (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13617:57)
+    at Object.onReceiveHalfClose (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-09-25T16:55:32.153Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-25T16:55:32.153Z","pid":4796,"hostname":"T2-LAP-9751","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-25T16:55:32.196Z","pid":4796,"hostname":"T2-LAP-9751","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-09-25T16:55:32.196Z","pid":4796,"hostname":"T2-LAP-9751","msg":"End of node method closeAllBrowsers"}

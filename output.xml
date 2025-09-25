@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-09-25T12:55:21.329635" rpa="false" schemaversion="5">
+<suite id="s1" name="First Robot Test" source="C:\Users\KaseyCade\PlaywrightTraining\T2QA-GIT-Practice\first_robot_test.robot">
+<test id="s1-t1" name="T2 Login Test Using Robot Framework" line="10">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-25T12:55:21.523114" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\KaseyCade\\PlaywrightTraining\\T2QA-GIT-Practice\\browser\\traces\\temp\\39de0c45-ca71-4cc7-9dbf-1c9db2d1f4df"}</msg>
+<msg time="2025-09-25T12:55:21.584700" level="INFO">Starting Browser process C:\Users\KaseyCade\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:54548</msg>
+<msg time="2025-09-25T12:55:23.327434" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":500,"timeout":30000,"tracesDir":"C:\\Users\\KaseyCade\\PlaywrightTraining\\T2QA-GIT-Practice\\browser\\traces\\temp\\39de0c45-ca71-4cc7-9dbf-1c9db2d1f4df"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<arg>slowMo=500ms</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-25T12:55:21.522434" elapsed="1.805279"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-25T12:55:29.334236" level="INFO">Successfully initialized new page object and opened url: https://dukeport201.t2qa.com/DUKEQA1/adm/users/auth.aspx?from=https://dukeport201.t2qa.com/DUKEQA1/adm/dev/impersonateUser.aspx</msg>
+<msg time="2025-09-25T12:55:29.334298" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${LOGIN_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-25T12:55:23.328583" elapsed="6.005824"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-25T12:55:29.335303" level="INFO">Fills the text 'Kasey1' in the given field.</msg>
+<arg>id=ctl00_T2Main_txtLogin</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-25T12:55:29.334795" elapsed="0.543645"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-25T12:55:29.879408" level="INFO">Fills the text 'Parking123!!!' in the given field.</msg>
+<arg>id=ctl00_T2Main_txtPassword</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-25T12:55:29.878820" elapsed="0.521134"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-25T12:55:30.401213" level="INFO">Clicks the element 'id=ctl00_T2Main_cmdLogin'.</msg>
+<arg>id=ctl00_T2Main_cmdLogin</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-25T12:55:30.400417" elapsed="1.294117"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2025-09-25T12:55:31.695474" level="INFO">Waiting page load to state to receive networkidle in 10000.0</msg>
+<msg time="2025-09-25T12:55:31.845483" level="INFO">Load state networkidle got in 10000</msg>
+<arg>networkidle</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2025-09-25T12:55:31.694927" elapsed="0.150683"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-09-25T12:55:31.882795" level="INFO">Text: 'TEST Mode DB: oraqa-dukeqa1.t2qa.com/dukeqa1 WS: https://dukedev201.t2qa.com/DUKEQA1/PowerParkWS/ Server: FLX-Q-FLXP201 1 session Customer: 0 Basket: 2339197\nWelcome, Kasey1\n2490\nLast Login at 9/23/2025 1:13:02 PM PST from 172.25.185.76\nLogout\nT2 Systems, Inc. FlexPort Administration 17.13.25239.8\n Configuration \n Analyze Flex \n Guest Permits \n Status \n Users \n Advanced \n Home\nAdmin Menu &gt; Impersonate Flex Entity\nImpersonate Flex Entity\n\nEnter a valid Flex Entity UID to log in to the FlexPort application as that user.\n\nNote that regardless of configuration options, you will be directed to the "My Account" page.\n\nEntity UID  * \n\n\n© 2025 T2 Systems, Inc. All Rights Reserved.\n\nDisable the T2 Systems Support Account'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Impersonate</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-25T12:55:31.846086" elapsed="0.036816"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-25T12:55:32.140410" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-25T12:55:31.883307" elapsed="0.257232"/>
+</kw>
+<doc>Test login functionality using Robot Framework</doc>
+<status status="PASS" start="2025-09-25T12:55:21.521521" elapsed="10.619411"/>
+</test>
+<status status="PASS" start="2025-09-25T12:55:21.332296" elapsed="10.814582"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="First Robot Test" id="s1" pass="1" fail="0" skip="0">First Robot Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
